@@ -11,8 +11,8 @@ source:
   sha256: af3c606852e991c2c1b3ea4f7558c69ab9138b713a7166a6eedf48ef1af660d3
 
 build:
-  number: 6
-  skip: true  # [py<310 or win]
+  number: 7
+  skip: true  # [py<311 or win]
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv'
 
 requirements:
@@ -30,7 +30,7 @@ requirements:
     - meson-python
     - meson >=1.6.0
     - numpy
-    - fluidfft-builder >=0.0.1
+    - fluidfft-builder >=0.0.3
     - cython
     - transonic >=0.6.1
     - pip
